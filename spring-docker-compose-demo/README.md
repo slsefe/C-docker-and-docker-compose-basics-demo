@@ -5,7 +5,7 @@
 ## 1. 构建项目JAR包
 
 ```bash
-./gradlew jar
+./gradlew bootJar
 ```
 
 ## 2. 在项目根目录下定义Dockerfile文件
@@ -28,3 +28,7 @@ curl http://localhost:8080/persons/1
 ```bash
 docker-compose down
 ```
+
+## 注意
+
+Spring中配置的MySQL地址的host,是docker-compose.yml中配置的MySQL的服务名

@@ -5,7 +5,7 @@
 ## 1. 构建项目JAR包
 
 ```bash
-./gradlew jar
+./gradlew bootJar
 ```
 
 ## 2. 在项目根目录下定义Dockerfile文件
