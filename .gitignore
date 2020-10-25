@@ -1,5 +1,7 @@
 .idea/
 .gradle/
 build/
+out/
+target/
 data/
 .DS_Store
