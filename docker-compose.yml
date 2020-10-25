@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    image: app:1.0
+    container_name: app
+    ports:
+      - '8080:8080'
+  mysql:
+    image: mysql:5.7
+    container_name: mysql
+    environment:
+      MYSQL_DATABASE: 'demo'
+      MYSQL_ROOT_PASSWORD: 'root'
+    ports:
+      - '3306:3306'
+    volumes:
+      - $PWD/data:/var/lib/mysql
